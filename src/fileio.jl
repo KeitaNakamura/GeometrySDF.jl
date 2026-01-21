@@ -36,6 +36,15 @@ The polyline is closed implicitly by connecting the last point back to the first
 - `padding`: Extra margin around the polyline in multiples of the grid spacing.
 - `datatype`: Floating-point type used for computation (default: `Float64`).
 - `progress`: Show progress meter.
+
+# Examples
+```jldoctest
+julia> sdf = GeometrySDF.sdf([0.0 1.0; 0.2886751346 0.5; 0.8660254038 0.5; 0.5773502692 0.0; 0.8660254038 -0.5; 0.2886751346 -0.5; 0.0 -1.0; -0.2886751346 -0.5; -0.8660254038 -0.5; -0.5773502692 0.0; -0.8660254038 0.5; -0.2886751346 0.5]');
+
+julia> GeometrySDF.writevtk("hexagram", sdf)
+1-element Vector{String}:
+ "hexagram.vti"
+```
 """
 function sdf(points::AbstractMatrix{T}; kwargs...) where {T <: Real}
     @assert size(points, 1) == 2

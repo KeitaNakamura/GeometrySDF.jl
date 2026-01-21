@@ -1,3 +1,26 @@
+"""
+    SignedDistanceField(grid, ϕ)
+
+A signed distance field (SDF) defined on a Cartesian grid.
+
+This type is the return value of [`sdf`](@ref). The scalar field values are stored in `ϕ`
+with the same shape as `grid`.
+
+# Fields
+- `grid`: Sampling grid (provides `axes` and spacing).
+- `ϕ`: Signed distance values on the grid nodes.
+
+# Interpolation (external)
+This package does not bundle interpolation. You can interpolate `ϕ` using Interpolations.jl
+(or similar) by passing the grid axes and the field values.
+
+# Examples
+```julia
+julia> using Interpolations
+
+julia> itp = linear_interpolation(sdf.grid.axes, sdf.ϕ);
+```
+"""
 struct SignedDistanceField{dim, T, V, A <: AbstractArray{T}}
     grid::Grid{dim, T, V}
     ϕ::A

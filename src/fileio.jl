@@ -1,5 +1,5 @@
 """
-    sdf(path::String; spacing=:auto, minres=128, padding=10, datatype=Float64, progress=false)
+    sdf(path::String; spacing=:auto, minres=128, padding=1, datatype=Float64, progress=false)
 
 Generate a 3D signed distance field (SDF) from a triangle mesh file.
 
@@ -19,7 +19,7 @@ function sdf(path::String; datatype::Type{T}=Float64, kwargs...) where {T}
 end
 
 """
-    sdf(points; spacing=:auto, minres=128, padding=10, datatype=Float64, progress=false)
+    sdf(points; spacing=:auto, minres=128, padding=1, datatype=Float64, progress=false)
 
 Generate a 2D signed distance field (SDF) from a closed polyline.
 
@@ -47,7 +47,7 @@ end
 
 function _sdf(
         mesh; spacing=:auto, minres=128,
-        padding::Int=10, datatype::Type{T}=Float64, progress::Bool=false
+        padding::Int=1, datatype::Type{T}=Float64, progress::Bool=false
     ) where {T}
 
     prims = mesh_primitives(mesh)

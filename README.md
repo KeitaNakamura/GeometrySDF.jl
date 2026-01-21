@@ -9,11 +9,16 @@
 ```julia
 julia> using GeometrySDF
 
-julia> sdf = GeometrySDF.sdf("test/stanford_dragon.stl");
+julia> sdf = GeometrySDF.sdf("test/stanford_bunny.stl");
 
-julia> GeometrySDF.writevtk("dragon", sdf)
+julia> GeometrySDF.writevtk("bunny", sdf)
 1-element Vector{String}:
- "dragon.vti"
+ "bunny.vti"
 ```
 
-<img width="300" src="https://github.com/user-attachments/assets/cd523eaa-909e-4d03-ac74-1e6a52fcb776" />
+<h1 align="center">
+    <img width="180" src="https://github.com/user-attachments/assets/706348b6-c149-4688-9894-84d949d82f4b" />
+    <img width="210" src="https://github.com/user-attachments/assets/9408b4e9-c812-486d-bece-8c8f8c33af8e" />
+    <img width="170" src="https://github.com/user-attachments/assets/806915fd-a750-4eac-8946-3ba778258e5e" />
+    <img width="150" src="https://github.com/user-attachments/assets/71a89afe-54d7-4732-ada0-d744b496a5d0" />
+</h1>

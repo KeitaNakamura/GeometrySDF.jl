@@ -1,0 +1,7 @@
+/Manifest.toml
+/LocalPreferences.toml
+/test/Manifest.toml
+/docs/build
+/docs/Manifest.toml
+# others
+*.DS_Store

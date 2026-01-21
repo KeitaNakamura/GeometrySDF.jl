@@ -16,4 +16,4 @@ julia> GeometrySDF.write_vtk("dragon", sdf)
  "dragon.vti"
 ```
 
-<img width="400" src="https://github.com/user-attachments/assets/cd523eaa-909e-4d03-ac74-1e6a52fcb776" />
+<img width="300" src="https://github.com/user-attachments/assets/cd523eaa-909e-4d03-ac74-1e6a52fcb776" />

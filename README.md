@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/KeitaNakamura/GeometrySDF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/KeitaNakamura/GeometrySDF.jl/actions/workflows/CI.yml)
 [![codecov](https://codecov.io/gh/KeitaNakamura/GeometrySDF.jl/graph/badge.svg?token=hKUB58zHkF)](https://codecov.io/gh/KeitaNakamura/GeometrySDF.jl)
-[![Stable](https://img.shields.io/badge/docs-latest%20release-blue.svg)](https://KeitaNakamura.github.io/GeometrySDF.jl/stable)
+[![Stable](https://img.shields.io/badge/docs-latest%20release-blue.svg)](https://KeitaNakamura.github.io/GeometrySDF.jl/dev)
 
 
 ```julia

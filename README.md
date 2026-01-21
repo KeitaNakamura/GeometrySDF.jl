@@ -11,7 +11,7 @@ julia> using GeometrySDF
 
 julia> sdf = GeometrySDF.sdf("test/stanford_dragon.stl");
 
-julia> GeometrySDF.write_vtk("dragon", sdf)
+julia> GeometrySDF.writevtk("dragon", sdf)
 1-element Vector{String}:
  "dragon.vti"
 ```

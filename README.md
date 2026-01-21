@@ -2,6 +2,10 @@
 
 *Fast signed distance field (SDF) generation from 3D triangle meshes and 2D polylines in Julia*
 
+[![CI](https://github.com/KeitaNakamura/GeometrySDF.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/KeitaNakamura/GeometrySDF.jl/actions/workflows/CI.yml)
+[![codecov](https://codecov.io/gh/KeitaNakamura/GeometrySDF.jl/graph/badge.svg?token=hKUB58zHkF)](https://codecov.io/gh/KeitaNakamura/GeometrySDF.jl)
+
+
 ```julia
 julia> using GeometrySDF
 

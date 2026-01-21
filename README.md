@@ -10,11 +10,17 @@
 ```julia
 julia> using GeometrySDF
 
-julia> sdf = GeometrySDF.sdf("test/stanford_bunny.stl");
+julia> sdf3d = GeometrySDF.sdf("test/stanford_bunny.stl");
 
-julia> GeometrySDF.writevtk("bunny", sdf)
+julia> GeometrySDF.writevtk("bunny", sdf3d)
 1-element Vector{String}:
  "bunny.vti"
+
+julia> sdf2d = GeometrySDF.sdf([0.0 1.0; 0.2886751346 0.5; 0.8660254038 0.5; 0.5773502692 0.0; 0.8660254038 -0.5; 0.2886751346 -0.5; 0.0 -1.0; -0.2886751346 -0.5; -0.8660254038 -0.5; -0.5773502692 0.0; -0.8660254038 0.5; -0.2886751346 0.5]');
+
+julia> GeometrySDF.writevtk("hexagram", sdf2d)
+1-element Vector{String}:
+ "hexagram.vti"
 ```
 
 <h1 align="center">
